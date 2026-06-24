@@ -1,0 +1,8 @@
+import base64
+
+data = (
+    'iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAADnG3M7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAJY0lEQVR4nO3dP2xU1RnH8bfPZ0d3dh3d3f0YpQpEJ7QW8T6bUlUo1xYUmE8E3YJg1UEUylqN9Io6iSgSygUkUEYeEkQxYxVtiLGpAg0GuUXFJgQA7Jjp7dm9nZ3c3I3+/8mZ2dnfnZ3a+3nzvP3rNnv3Pzc+v7uec75zvX7Y8ZAAAAAwP4j+9XyBAB5e1dYz+JHAAAAC0lEQVR4nO3RAQ0AAAjAMPpVEL8CF8DRpwEAAMBAAAAAAAAAPwBwKxMDTeQAAAAASUVORK5CYII='
+)
+with open('magazine-cover.png', 'wb') as f:
+    f.write(base64.b64decode(data))
+print('magazine-cover.png created')
